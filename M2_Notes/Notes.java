@@ -1,4 +1,4 @@
-public class escaping_chars {
+public class Notes {
 
    public static void main(String[] args) {
    /*
