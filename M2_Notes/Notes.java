@@ -33,6 +33,7 @@ public class Notes {
       System.out.println(change);
       */
       
+      /*
       String name;
       int age;
       int birth_year;
@@ -48,16 +49,26 @@ public class Notes {
       
       
       System.out.println("Hi " + name + " were born in " + birth_year + ".");
+      */
       
+      /*
+      int total, num1, num2;
       
+      num1 = 13;
+      num2 = 12;
       
+      total = num1 % num2;
+      System.out.println(total);
+      */
+      String name;
       
+      Scanner scan = new Scanner(System.in);
       
+      System.out.print("Enter your name: ");
+      name = scan.nextLine();
       
-      
-      
-      
-   
+      System.out.println("Hello " + name + "!");
+    
    }
 
 
