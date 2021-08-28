@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class MessageConverter {
 
-/**
-     * Using the string class and its methods.
-     * @param args Command line arguements -not used.
+    /**
+    * Using the string class and its methods.
+    * @param args Command line arguements -not used.
     */
 
    public static void main(String[] args) {
@@ -72,7 +72,8 @@ public class MessageConverter {
 
 }
 
-/* the reason why the 'A' does not get replaced when try
+/* 
+   the reason why the 'A' does not get replaced when try
    the input "A message" is because in the if else statement
    for outputType 4 there is no statment to replace capital vowels
 */
