@@ -48,7 +48,7 @@ public class SquareUnits {
          maxFeet = inchesRemaining / FEET_DIVISOR;
          inchesRemaining = inchesRemaining - (maxFeet * FEET_DIVISOR);
       
-         maxInches = inchesRemaining;
+         maxInches = inchesRemaining; //for readability
       
       //print statements
          System.out.println("Number of Units:");
