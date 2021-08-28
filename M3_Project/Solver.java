@@ -46,7 +46,7 @@ Calculates the value of the a given equation based on user input.
       //formatted result
       formattedResult = df.format(result);
    
-      //printing statments
+      //print statments
       System.out.println("Result: " + result);
       System.out.println("# of characters to left of decimal point: " + left);
       System.out.println("# of characters to right of decimal point: " + right);
