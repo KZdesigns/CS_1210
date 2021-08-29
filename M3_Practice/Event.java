@@ -20,10 +20,11 @@ public class Event {
    public static void main(String[] args) {
    
       //variables
-      //String event, month, day, year,
-         //date, hour, min, time, section
-         //row, seat, price, discount, cost, prize;           
-      //Double priceNum, discountNum, costNum, prizeNum;
+      // String event, month, day, year,
+            //date, hour, min, time, section
+            //row, seat, price, discount, cost, prize;
+                 
+      // Double priceNum, discountNum, costNum, prizeNum;
    
       //getting input from user
       Scanner scan = new Scanner(System.in);
@@ -51,7 +52,7 @@ public class Event {
          String row = userInput.substring(21, 23);
          String seat = userInput.substring(23, 25);
          
-         //setup formatters
+         //set up formatters
          DecimalFormat dfPrice = new DecimalFormat("$#,##0.00");
          DecimalFormat dfDiscount = new DecimalFormat("0%");
          DecimalFormat dfPrize = new DecimalFormat("0000");
