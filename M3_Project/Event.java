@@ -20,10 +20,9 @@ public class Event {
    public static void main(String[] args) {
    
       //variables
-      //String event, month, day, year,
-         //date, hour, min, time, section
-         //row, seat, price, discount, cost, prize;           
-      //Double priceNum, discountNum, costNum, prizeNum;
+      String event, month, day, year, date, hour, min, time, 
+         section, row, seat, price, discount, cost, prize;           
+      double priceNum, discountNum, costNum, prizeNum;
    
       //getting input from user
       Scanner scan = new Scanner(System.in);
@@ -39,17 +38,17 @@ public class Event {
       
       } else {
          
-         String event = userInput.substring(25, userInput.length());
-         String month = userInput.substring(0, 2);
-         String day = userInput.substring(2, 4);
-         String year = userInput.substring(4, 8);
-         String date = month + "/" + day + "/" + year;
-         String hour = userInput.substring(8, 10);
-         String min = userInput.substring(10, 12);
-         String time = hour + ":" + min;
-         String section = userInput.substring(19, 21);
-         String row = userInput.substring(21, 23);
-         String seat = userInput.substring(23, 25);
+         event = userInput.substring(25, userInput.length());
+         month = userInput.substring(0, 2);
+         day = userInput.substring(2, 4);
+         year = userInput.substring(4, 8);
+         date = month + "/" + day + "/" + year;
+         hour = userInput.substring(8, 10);
+         min = userInput.substring(10, 12);
+         time = hour + ":" + min;
+         section = userInput.substring(19, 21);
+         row = userInput.substring(21, 23);
+         seat = userInput.substring(23, 25);
          
          //setup formatters
          DecimalFormat dfPrice = new DecimalFormat("$#,##0.00");
@@ -57,24 +56,24 @@ public class Event {
          DecimalFormat dfPrize = new DecimalFormat("0000");
          
          //price
-         String price = userInput.substring(12, 17);
-         double priceNum = Double.parseDouble(price);
+         price = userInput.substring(12, 17);
+         priceNum = Double.parseDouble(price);
          priceNum = priceNum / 100;
          price = dfPrice.format(priceNum);
          
          //discount
-         String discount = userInput.substring(17, 19);
-         double discountNum = Double.parseDouble(discount);
+         discount = userInput.substring(17, 19);
+         discountNum = Double.parseDouble(discount);
          discountNum = discountNum / 100;
          discount = dfDiscount.format(discountNum);
          
          //cost
-         double costNum = priceNum - (priceNum * discountNum);
-         String cost = dfPrice.format(costNum);
+         costNum = priceNum - (priceNum * discountNum);
+         cost = dfPrice.format(costNum);
          
          //prize number
-         double prizeNum = (Math.random() * 10000) + 1;
-         String prize = dfPrize.format(prizeNum);
+         prizeNum = (Math.random() * 10000) + 1;
+         prize = dfPrize.format(prizeNum);
          
          
          //print statements
