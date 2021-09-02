@@ -12,32 +12,32 @@ public class EllipsoidApp {
       String label = scan.nextLine();
       
       System.out.print("\ta: ");
-      String a = scan.nextLine();
-      double a1 = Double.parseDouble(a);
-      if (a1 < 1) {
+      String aIn = scan.nextLine();
+      double a = Double.parseDouble(aIn);
+      if (a < 1) {
          System.out.println(ERROR_MESSAGE);
          return;
       }
       
       
       System.out.print("\tb: ");
-      String b = scan.nextLine();
-      double b1 = Double.parseDouble(b);
-      if (b1 < 1) {
+      String bIn = scan.nextLine();
+      double b = Double.parseDouble(bIn);
+      if (b < 1) {
          System.out.println(ERROR_MESSAGE);
          return;
       }
      
       
       System.out.print("\tc: ");
-      String c = scan.nextLine();
-      double c1 = Double.parseDouble(c);
-      if (c1 < 1) {
+      String cIn = scan.nextLine();
+      double c = Double.parseDouble(cIn);
+      if (c < 1) {
          System.out.println(ERROR_MESSAGE);
          return;
       }
      
-      Ellipsoid ellip = new Ellipsoid(label, a1, b1, c1);
+      Ellipsoid ellip = new Ellipsoid(label, a, b, c);
       System.out.print("\n" + ellip);
    }
 
