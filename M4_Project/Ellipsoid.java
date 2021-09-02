@@ -22,32 +22,60 @@ public class Ellipsoid {
       return label;
    }
    
-   public void setLabel(String labelIn) {
-      label = labelIn;  
+   public boolean setLabel(String labelIn) {
+      boolean isSet = false;
+   
+      if (labelIn != null) {
+         label = labelIn.trim();
+         isSet = true;
+      }
+     
+      return isSet;   
    }
    
    public double getA() {
       return a;
    }
     
-   public void setA(double aIn) {
-      a = aIn; 
+   public boolean setA(double aIn) {
+      boolean isSet = false;
+      
+      if (aIn > 0) {
+         a = aIn;
+         isSet = true;
+      }
+      
+      return isSet; 
    }
    
    public double getB() {
       return b;
    }
    
-   public void setB(double bIn) {
-      b = bIn;
+   public boolean setB(double bIn) {
+      boolean isSet = false;
+      
+      if (bIn > 0) {
+         b = bIn;
+         isSet = true;
+      }
+      
+      return isSet; 
    }
    
    public double getC() {
       return c;
    }
    
-   public void setC(double cIn) {
-      c = cIn; 
+   public boolean setC(double cIn) {
+      boolean isSet = false;
+      
+      if (cIn > 0) {
+         c = cIn;
+         isSet = true;
+      }
+      
+      return isSet; 
    }
    
    public double volume() {
