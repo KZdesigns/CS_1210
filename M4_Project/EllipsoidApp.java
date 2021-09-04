@@ -6,7 +6,6 @@ public class EllipsoidApp {
    public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
       
-   
       System.out.println("Enter label and axes a, b, c for an ellipsoid.");
       System.out.print("\tlabel: ");
       String label = scan.nextLine();
@@ -19,7 +18,6 @@ public class EllipsoidApp {
          return;
       }
       
-      
       System.out.print("\tb: ");
       String bIn = scan.nextLine();
       double b = Double.parseDouble(bIn);
@@ -28,7 +26,6 @@ public class EllipsoidApp {
          return;
       }
      
-      
       System.out.print("\tc: ");
       String cIn = scan.nextLine();
       double c = Double.parseDouble(cIn);
@@ -40,5 +37,4 @@ public class EllipsoidApp {
       Ellipsoid ellip = new Ellipsoid(label, a, b, c);
       System.out.print("\n" + ellip);
    }
-
 }
