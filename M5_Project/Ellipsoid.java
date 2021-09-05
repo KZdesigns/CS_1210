@@ -11,7 +11,7 @@ public class Ellipsoid {
    
    //constructor
    public Ellipsoid(String labelIn, double aIn, double bIn, double cIn) {
-      setLabel(labelIn);
+      setLabel(labelIn.trim());
       setA(aIn);
       setB(bIn);
       setC(cIn);

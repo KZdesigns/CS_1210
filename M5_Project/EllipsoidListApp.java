@@ -1,21 +1,48 @@
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class EllipsoidListApp {
 
-   public static void main(String[] args) {
-      Ellipsoid ex1 = new Ellipsoid("ex1", 1,2,3);
-      Ellipsoid ex2 = new Ellipsoid("ex2", 2.3,5.5,7.4);
-      Ellipsoid ex3 = new Ellipsoid("ex3", 123.4,234.5,345.6);
-      ArrayList<Ellipsoid> myList = new ArrayList<Ellipsoid>();
-      myList.add(ex1);
-      myList.add(ex2);
-      myList.add(ex3);
-      EllipsoidList testList = new EllipsoidList("Ellipsoid Test List", myList);      
+   public static void main(String[] args) throws FileNotFoundException {
    
-      System.out.println(testList);
-      System.out.println(testList.summaryInfo());
+      ArrayList<Ellipsoid> myList = new ArrayList<Ellipsoid>();
+       
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter file name: ");
+      String fileName = scan.nextLine();
       
+      Scanner scanFile = new Scanner(new File(fileName)).useDelimiter("\n");
+      String ellipsoidListName = scanFile.nextLine();
+      
+      while (scanFile.hasNext()) {
+         String label = scanFile.nextLine();
+         String a = scanFile.nextLine();
+         String b = scanFile.nextLine();
+         String c = scanFile.nextLine();
+         
+         double a1 = Double.parseDouble(a);
+         double b1 = Double.parseDouble(b);
+         double c1 = Double.parseDouble(c);
+          
+         Ellipsoid e = new Ellipsoid(label, a1, b1, c1);
+        
+         myList.add(e);  
+      }
+      scanFile.close();
+      
+      EllipsoidList eList = new EllipsoidList(ellipsoidListName, myList);
+      System.out.println("\n" + ellipsoidListName);
+      
+      int index = 0;
+      
+      while (index <= myList.size() - 1) {
+         Ellipsoid myEllipsoid = myList.get(index);
+         System.out.println("\n" + myEllipsoid);
+         index++;
+      }
+     
+      System.out.println("\n\n" + eList.summaryInfo()); 
    }
-
-
 }
