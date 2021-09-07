@@ -3,9 +3,21 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+/**
+Program for creating the EllipsoidLisApp.
+Project 4
+@author Kyle Zimmerman - CS 1210
+@version 9/6/2021
+*/
 public class EllipsoidListApp {
-
-   public static void main(String[] args) throws FileNotFoundException {
+   
+   /**
+   Read in data from a file and creates and stores Ellipsoid Objects.
+   @param args - Standard commandline arguments
+   @throws FileNotFoundException when an incorrect file is provided.
+   */
+   public static void main(String[] args) 
+      throws FileNotFoundException {
    
       ArrayList<Ellipsoid> myList = new ArrayList<Ellipsoid>();
        
