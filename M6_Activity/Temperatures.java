@@ -3,9 +3,9 @@ import java.util.ArrayList;
 /**
 Temperatures class will hold a set of integer calues 
 represenitng daily temperatures.
- Activity 6
- @author Kyle Zimmerman - CS 1210
- @version 9/9/2021
+Activity 6
+@author Kyle Zimmerman - CS 1210
+@version 9/9/2021
 */
 
 public class Temperatures {
@@ -65,7 +65,7 @@ public class Temperatures {
    @return a string that shows the temp list and high and low values.
    */
    public String toString() {
-      return "/tTemperatures: " + temperatures
+      return "\tTemperatures: " + temperatures
          + "\n\tLow: " + getLowTemp()
          + "\n\tHigh: " + getHighTemp();
    }
@@ -77,6 +77,8 @@ public class Temperatures {
    public int higherMaximum(int highIn) {
       return highIn > getHighTemp() ? highIn : getHighTemp();
    }
-
+   
+   
+   
 
 }
