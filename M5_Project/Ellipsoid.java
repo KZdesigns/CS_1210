@@ -7,7 +7,6 @@ Project 5
 @version 9/6/2021
 */
 
-
 public class Ellipsoid {
 
    //fields - instance variables

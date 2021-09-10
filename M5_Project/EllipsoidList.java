@@ -155,37 +155,22 @@ public class EllipsoidList {
    
     /**
     Method that displays a summary of information about the EllipsoidList.
-    @return a string representation of the EllipsoidList object.
-    */
+    @return output a string representation of the EllipsoidList object.
+    */      
    public String summaryInfo() {
-      String output = "";
-      int index = 0;
       DecimalFormat df = new DecimalFormat("#,##0.0##");
-      
-      double totalVolume = 0;
-      double totalSurfaceArea = 0;
-      double volumeAverage = 0;
-      double surfaceAreaAverage = 0;
-      
-      while (index <= ellipsoidList.size() - 1) {
-         Ellipsoid el = ellipsoidList.get(index);
-         totalVolume += el.volume();
-         totalSurfaceArea += el.surfaceArea();
-         index++;
-      } 
-      
-      volumeAverage = totalVolume / ellipsoidList.size();
-      surfaceAreaAverage = totalSurfaceArea / ellipsoidList.size();
-      
-      output = "----- Summary for Ellipsoid Test List -----\n"
+    
+      String output = "----- Summary for Ellipsoid Test List -----\n"
          + "Number of Ellipsoid Objects: " + ellipsoidList.size()
-         + "\nTotal Volume: " + df.format(totalVolume) + " cubic units\n"
+         + "\nTotal Volume: " + df.format(totalVolume()) + " cubic units\n"
          + "Total Surface Area: " 
-            + df.format(totalSurfaceArea) + " square units\n"
-         + "Average Volume: " + df.format(volumeAverage) + " cubic units\n"
+           + df.format(totalSurfaceArea()) + " square units\n"
+         + "Average Volume: " + df.format(averageVolume()) + " cubic units\n"
          + "Average Surface Area: " 
-            + df.format(surfaceAreaAverage) + " square units";
-      
+           + df.format(averageSurfaceArea()) + " square units";
+   
       return output;
    }
+
+   
 }
