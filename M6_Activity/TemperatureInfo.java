@@ -33,7 +33,8 @@ public class TemperatureInfo {
       
       char choice = 'E';
       do {
-         System.out.print("Enter choice - [L]ow temp, [H]igh temp, [P]rint, [E]nd: ");
+         System.out.print("Enter choice - [L]ow temp, [H]igh temp, "
+            + "[P]rint, [E]nd: ");
          choice = userInput.nextLine().toUpperCase().charAt(0);
          switch (choice) {
             case 'L':

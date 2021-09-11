@@ -70,10 +70,20 @@ public class Temperatures {
          + "\n\tHigh: " + getHighTemp();
    }
    
+   /**
+   Method to see if which tempature is lower.
+   @param lowIn new low temparture to be compared.
+   @return the lowest integer value.
+   */
    public int lowerMinimum(int lowIn) {
       return lowIn < getLowTemp() ? lowIn : getLowTemp();
    }
    
+   /**
+   Method to see if which tempature is largest.
+   @param highIn new high temparture to be compared.
+   @return the largest integer value.
+   */
    public int higherMaximum(int highIn) {
       return highIn > getHighTemp() ? highIn : getHighTemp();
    }
