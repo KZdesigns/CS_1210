@@ -254,9 +254,8 @@ public class EllipsoidList {
    @return the matching ellipsoid object or null.
    */
    public Ellipsoid deleteEllipsoid(String labelIn) {
-         
+      int index = 0;
       for (Ellipsoid ellipsoid : ellipsoidList) {
-         int index = 0;
          if (ellipsoid.getLabel().equalsIgnoreCase(labelIn)) {
             ellipsoidList.remove(index);
             return ellipsoid;

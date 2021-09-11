@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.text.DecimalFormat;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -30,18 +28,92 @@ public class EllipsoidListMenuApp {
          + "\nD - Delete Ellipsoid"
          + "\nF - Find Ellipsoid"
          + "\nE - Edit Ellipsoid"
-         + "\nQ - Quit"
-         + "\nEnter Code [R, S, A, D, F, E, or Q]:");
-      Scanner userInput = new Scanner(System.in);
-      char choice = userInput.nextLine().toUpperCase().charAt(0);
+         + "\nQ - Quit");
       
-      switch (choice) {
-         case 'R':
-            System.out.print("File Name: ");
-            String fileName = userInput.nextLine();
-            test = test.readFile(fileName);
-            System.out.println(test.summaryInfo());
-            break;
-      }
+      char choice = 'Q';
+            
+      do {
+         System.out.print("Enter Code [R, P, S, A, D, F, E, or Q]: ");
+         Scanner userInput = new Scanner(System.in);
+         choice = userInput.nextLine().toUpperCase().charAt(0);
+      
+         switch (choice) {
+            case 'R':
+               System.out.print("\tFile Name: ");
+               String fileName = userInput.nextLine();
+               test = test.readFile(fileName);
+               System.out.println("\tFile read in and"
+                  + " Ellipsoid List created\n");
+               break;
+            case 'P':
+               System.out.print(test);
+               break;
+            case 'S':
+               System.out.print("\n" + test.summaryInfo() + "\n\n");
+               break;
+            case 'A':
+               System.out.print("\tlabel: ");
+               String newLabel = userInput.nextLine();
+               System.out.print("\ta: ");
+               String newA = userInput.nextLine();
+               Double a1 = Double.parseDouble(newA);
+               System.out.print("\tb: ");
+               String newB = userInput.nextLine();
+               Double b1 = Double.parseDouble(newB);
+               System.out.print("\tc: ");
+               String newC = userInput.nextLine();
+               Double c1 = Double.parseDouble(newC);
+               test.addEllipsoid(newLabel, a1, b1, c1);
+               System.out.println("\t*** Ellipsoid added ***\n");
+               break;
+            case 'D':
+               System.out.print("\tLabel: ");
+               String label = userInput.nextLine();
+               Ellipsoid deleted = test.deleteEllipsoid(label);
+               if (deleted == null) {
+                  System.out.print("\t\"" + label + "\"" + " not found\n\n");
+               } else {
+                  System.out.print("\t\"" + deleted.getLabel() 
+                     + "\"" + " deleted\n\n");
+               }
+               break;
+            case 'F':
+               System.out.print("\tlabel: ");
+               label = userInput.nextLine();
+               Ellipsoid found = test.findEllipsoid(label);
+               if (found == null) {
+                  System.out.print("\t\"" + label + "\"" + " not found\n\n");
+               } else {
+                  System.out.print(found + "\n\n");
+               }
+               break;
+            case 'E':
+               System.out.print("\tlabel: ");
+               label = userInput.nextLine();
+               System.out.print("\ta: ");
+               newA = userInput.nextLine();
+               a1 = Double.parseDouble(newA);
+               System.out.print("\tb: ");
+               newB = userInput.nextLine();
+               b1 = Double.parseDouble(newB);
+               System.out.print("\tc: ");
+               newC = userInput.nextLine();
+               c1 = Double.parseDouble(newC);
+               Ellipsoid edited = test.editEllipsoid(label, a1, b1, c1);
+               if (edited == null) {
+                  System.out.println("\t\"" + label + "\"" + " not found\n");
+               } else {
+                  System.out.println("\t\"" + edited.getLabel() 
+                     + "\"" + " successfully edited\n");
+               }
+               break;
+            case 'Q':
+               break;
+            default:
+               System.out.println("*** invalid code ***");      
+         }
+      
+      
+      } while (choice != 'Q');
    }
 }
