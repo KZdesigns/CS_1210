@@ -110,7 +110,7 @@ public class EllipsoidListMenuApp {
             case 'Q':
                break;
             default:
-               System.out.println("*** invalid code ***");      
+               System.out.println("\t*** invalid code ***\n");      
          }
       
       
