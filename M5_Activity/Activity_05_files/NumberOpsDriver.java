@@ -45,7 +45,7 @@ public class NumberOpsDriver {
       	// add print statement for odds under num
          System.out.println("\tOdds under: " + num.oddsUnder());
       	// add print statement for powers of 2 under num
-         System.out.println("\tPowers of 2 under: " + "\t" 
+         System.out.println("\tPowers of 2 under:" + "\t" 
             + num.powersTwoUnder());
             
          index++;

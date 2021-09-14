@@ -1,5 +1,5 @@
 !1514;s
-J
+A
 SAU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 SCU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 S+U0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
@@ -12,13 +12,11 @@ s#i0
 s#k0
 s#j0
 s#l0
-!75;g
-%\011EllipsoidList.java
+!71;g
+%\011EllipsoidListApp.java
 %\011Ellipsoid.java
-%\011EllipsoidListMenuApp.java
-!75;f
 %\011EllipsoidList.java
+!71;f
+%\011EllipsoidListApp.java
 %\011Ellipsoid.java
-%\011EllipsoidListMenuApp.java
-!141;t
-jgrCheckstyle0xr	%\011EllipsoidList.java	1631347684764:P	%\011Ellipsoid.java	1631347684764:P	%\011EllipsoidListMenuApp.java	1631347684764:P	
+%\011EllipsoidList.java

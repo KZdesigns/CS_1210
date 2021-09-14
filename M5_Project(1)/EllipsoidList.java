@@ -160,7 +160,7 @@ public class EllipsoidList {
    public String summaryInfo() {
       DecimalFormat df = new DecimalFormat("#,##0.0##");
     
-      String output = "----- Summary for Ellipsoid Test List -----\n"
+      String output = "----- Summary for " + getName() + " -----\n"
          + "Number of Ellipsoid Objects: " + ellipsoidList.size()
          + "\nTotal Volume: " + df.format(totalVolume()) + " cubic units\n"
          + "Total Surface Area: " 

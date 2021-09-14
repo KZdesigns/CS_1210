@@ -25,7 +25,7 @@ public class EllipsoidListApp {
       System.out.print("Enter file name: ");
       String fileName = scan.nextLine();
       
-      Scanner scanFile = new Scanner(new File(fileName)).useDelimiter("\n");
+      Scanner scanFile = new Scanner(new File(fileName));
       String ellipsoidListName = scanFile.nextLine();
       
       while (scanFile.hasNext()) {
