@@ -106,4 +106,5 @@ public class Walk {
    }
 }
 
+// For testing
 // Walk w1 = new Walk("05:00", "06:30", "09/16", "Kyle");
