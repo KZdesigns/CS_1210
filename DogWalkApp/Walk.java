@@ -81,9 +81,8 @@ public class Walk {
       
       int start = Integer.parseInt(startIn);
       int end = Integer.parseInt(endIn);
-      
       int duration = end - start;
-    
+      
       return duration;
    }
    
