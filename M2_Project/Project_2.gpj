@@ -12,7 +12,8 @@ s#i0
 s#k0
 s#j0
 s#l0
-!43;g
+!1681;d
+[\012  grasp [\012   legendy -39.5\012   legendx -55.0\012   version 1\012   winflags 3\012   eheight 797\012   ewidth 720\012   height 797\012   width 720\012   wbp 0\012   initlayout 0\012   yoffs -0.5\012   xoffs 0.0\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012  node [\012   ClassInfo [\012    fields "Expression\\011()V\\011c\\0111\\011\\011\\011Expression\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011Expression"\012    condition 0\012    access2 0\012    access 2490401\012    classname "Expression"\012    fromclassfiledate 1629819808443\012    fromclassfilename "%\011Expression.class"\012    fromfilename "%\011Expression.java"\012   ]\012   id 0\012   graphics [\012    center [\012     x -110.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  node [\012   ClassInfo [\012    fields "ACRES_DIVISOR\\011I\\011\\01124\\011\\011\\011SquareUnits\011FEET_DIVISOR\\011I\\011\\01124\\011\\011\\011SquareUnits\011MAX_INPUT\\011I\\011\\01124\\011\\011\\011SquareUnits\011YARDS_DIVISOR\\011I\\011\\01124\\011\\011\\011SquareUnits\011SquareUnits\\011()V\\011c\\0111\\011\\011\\011SquareUnits\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011SquareUnits"\012    condition 1\012    access2 0\012    access 2490401\012    classname "SquareUnits"\012    fromclassfiledate 1629819808404\012    fromclassfilename "%\011SquareUnits.class"\012    fromfilename "%\011SquareUnits.java"\012   ]\012   id 1\012   graphics [\012    center [\012     x 0.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012 ]!43;g
 %\011SquareUnits.java
 %\011Expression.java
 !43;f
